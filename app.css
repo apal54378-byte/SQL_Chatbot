@@ -1,0 +1,260 @@
+﻿/* Custom CSS for modern premium UI */
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+
+html, body, [class*="css"] {
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+}
+
+.stApp {
+    background: radial-gradient(1200px 800px at 50% 0%, #170c0e 0%, #050506 100%);
+}
+
+[data-testid="stSidebar"] {
+    background: rgba(14, 9, 10, 0.85);
+    backdrop-filter: blur(12px) saturate(120%);
+    border-right: 1px solid rgba(239, 68, 68, 0.15);
+    box-shadow: 4px 0 40px -20px rgba(239, 68, 68, 0.25);
+}
+
+[data-testid="stHeader"] {
+    background: rgba(5, 5, 6, 0.7);
+    backdrop-filter: blur(8px);
+    border-bottom: 1px solid rgba(239, 68, 68, 0.12);
+}
+
+.main .block-container,
+[data-testid="stMainBlockContainer"] {
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+    max-width: 1400px;
+}
+
+.stButton button {
+    background: linear-gradient(135deg, #EF4444 0%, #B91C1C 100%);
+    color: #ffffff;
+    border: none;
+    border-radius: 12px;
+    padding: 0.65rem 1.25rem;
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    box-shadow: 0 10px 60px -20px rgba(239, 68, 68, 0.9);
+    transition: all 0.15s ease;
+}
+
+.stButton button:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 12px 70px -18px rgba(239, 68, 68, 0.95);
+}
+
+.stButton button:active {
+    transform: translateY(0);
+}
+
+.stButton button:focus {
+    outline: 2px solid rgba(248, 113, 113, 0.45);
+    outline-offset: 2px;
+}
+
+[data-testid="stTextArea"] textarea {
+    background: rgba(20, 12, 13, 0.95);
+    border: 1px solid rgba(239, 68, 68, 0.25);
+    border-radius: 14px;
+    font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+    font-size: 0.98rem;
+    line-height: 1.6;
+    box-shadow: 0 0 0 1px rgba(239, 68, 68, 0.05) inset, 0 20px 80px -30px rgba(239, 68, 68, 0.45);
+}
+
+[data-testid="stDataFrame"] {
+    background: rgba(14, 9, 10, 0.92);
+    border: 1px solid rgba(239, 68, 68, 0.18);
+    border-radius: 14px;
+    box-shadow: 0 20px 80px -40px rgba(239, 68, 68, 0.5);
+}
+
+[data-testid="stExpander"] {
+    background: rgba(14, 9, 10, 0.88);
+    border: 1px solid rgba(239, 68, 68, 0.16);
+    border-radius: 14px;
+}
+
+div[data-testid="stMetricValue"] {
+    font-weight: 700;
+    letter-spacing: -0.02em;
+}
+
+div[data-testid="stMetricLabel"] {
+    color: rgba(244, 244, 245, 0.65);
+}
+
+.stTabs [data-baseweb="tab-list"] {
+    gap: 0.5rem;
+    background: rgba(14, 9, 10, 0.92);
+    border: 1px solid rgba(239, 68, 68, 0.18);
+    border-radius: 999px;
+    padding: 0.25rem;
+    box-shadow: 0 10px 60px -40px rgba(239, 68, 68, 0.45);
+}
+
+.stTabs [data-baseweb="tab"] {
+    border-radius: 999px;
+    padding: 0.4rem 0.95rem;
+    color: rgba(244, 244, 245, 0.72);
+    font-weight: 500;
+}
+
+.stTabs [aria-selected="true"] {
+    background: linear-gradient(135deg, rgba(239, 68, 68, 0.22) 0%, rgba(185, 28, 28, 0.22) 100%);
+    color: #ffffff;
+    box-shadow: 0 0 0 1px rgba(248, 113, 113, 0.35) inset;
+}
+
+[data-testid="stCode"] code {
+    font-family: 'JetBrains Mono', 'SFMono-Regular', Consolas, monospace;
+}
+
+.status-dot {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    padding: 0.35rem 0.65rem;
+    border-radius: 999px;
+    background: rgba(34, 197, 94, 0.16);
+    color: #4ade80;
+    font-size: 0.92rem;
+    font-weight: 500;
+    border: 1px solid rgba(74, 222, 128, 0.45);
+    box-shadow: 0 0 60px -30px rgba(74, 222, 128, 0.9);
+}
+
+.status-dot::before {
+    content: "";
+    width: 0.55rem;
+    height: 0.55rem;
+    border-radius: 50%;
+    background: #4ade80;
+    box-shadow: 0 0 0 4px rgba(74, 222, 128, 0.25);
+}
+
+.card-glass {
+    background: rgba(14, 9, 10, 0.92);
+    border: 1px solid rgba(239, 68, 68, 0.18);
+    border-radius: 18px;
+    padding: 1.25rem 1.5rem;
+    box-shadow: 0 30px 120px -40px rgba(239, 68, 68, 0.55);
+    backdrop-filter: blur(10px) saturate(120%);
+}
+
+.card-subtle {
+    background: rgba(14, 9, 10, 0.86);
+    border: 1px solid rgba(239, 68, 68, 0.14);
+    border-radius: 16px;
+    padding: 1rem 1.25rem;
+}
+
+.tag {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.15rem 0.55rem;
+    border-radius: 999px;
+    font-size: 0.85rem;
+    font-weight: 600;
+    letter-spacing: 0.01em;
+    border: 1px solid rgba(248, 113, 113, 0.45);
+    background: rgba(239, 68, 68, 0.22);
+    color: #fecaca;
+}
+
+.tag-success {
+    border-color: rgba(74, 222, 128, 0.45);
+    background: rgba(34, 197, 94, 0.18);
+    color: #bbf7d0;
+}
+
+.tag-muted {
+    border-color: rgba(148, 163, 184, 0.4);
+    background: rgba(71, 85, 105, 0.22);
+    color: #e2e8f0;
+}
+
+.hero-title {
+    font-size: clamp(2rem, 4vw, 3rem);
+    font-weight: 700;
+    letter-spacing: -0.03em;
+    line-height: 1.08;
+    background: linear-gradient(120deg, #ffffff 0%, #fecaca 60%, #fca5a5 100%);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.hero-subtitle {
+    color: rgba(244, 244, 245, 0.72);
+    font-size: clamp(1rem, 1.5vw, 1.08rem);
+    line-height: 1.7;
+}
+
+.empty-illustration {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 1.25rem;
+    padding: clamp(2rem, 4vw, 3rem) 1rem;
+}
+
+.empty-state-title {
+    font-size: clamp(1.25rem, 2vw, 1.5rem);
+    font-weight: 600;
+    letter-spacing: -0.02em;
+}
+
+.empty-state-text {
+    color: rgba(244, 244, 245, 0.68);
+    max-width: 40rem;
+    line-height: 1.7;
+}
+
+.suggestion-chip {
+    display: inline-flex;
+    align-items: center;
+    padding: 0.45rem 0.85rem;
+    border-radius: 999px;
+    border: 1px solid rgba(239, 68, 68, 0.28);
+    background: rgba(20, 12, 13, 0.92);
+    color: rgba(244, 244, 245, 0.88);
+    font-size: 0.98rem;
+    box-shadow: 0 10px 60px -40px rgba(239, 68, 68, 0.6);
+    cursor: pointer;
+    transition: all 0.15s ease;
+}
+
+.suggestion-chip:hover {
+    transform: translateY(-1px);
+    border-color: rgba(248, 113, 113, 0.5);
+    background: rgba(24, 14, 15, 0.98);
+}
+
+.error-card {
+    background: rgba(24, 10, 14, 0.94);
+    border: 1px solid rgba(248, 113, 113, 0.45);
+    border-radius: 16px;
+    padding: 1rem 1.25rem;
+    box-shadow: 0 30px 120px -40px rgba(248, 113, 113, 0.6);
+}
+
+.sidebar-link {
+    display: flex;
+    align-items: center;
+    gap: 0.65rem;
+    padding: 0.5rem 0.65rem;
+    border-radius: 12px;
+    color: rgba(244, 244, 245, 0.78);
+    font-weight: 500;
+    transition: all 0.15s ease;
+}
+
+.sidebar-link:hover {
+    background: rgba(20, 12, 13, 0.96);
+    color: #ffffff;
+}
